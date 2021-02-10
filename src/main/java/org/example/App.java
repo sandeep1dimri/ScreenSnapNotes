@@ -167,7 +167,7 @@ public class App {
         ImageIO.write(screenShot, "jpeg", baos);
         ByteArrayInputStream bis = new ByteArrayInputStream(baos.toByteArray());
         //XWPFDocument.
-        run.addPicture(bis, XWPFDocument.PICTURE_TYPE_PNG, "picture", Units.toEMU(500), Units.toEMU(700));
+        run.addPicture(bis, XWPFDocument.PICTURE_TYPE_PNG, "picture", Units.toEMU(600), Units.toEMU(300));
         run.addBreak();
         baos.close();
         bis.close();
@@ -188,7 +188,7 @@ public class App {
         ImageIO.write(screenShot, "jpeg", baos);
         ByteArrayInputStream bis = new ByteArrayInputStream(baos.toByteArray());
         // run.addPicture(bis,Document.PICTURE_TYPE_PNG, "3", 0, 0);
-        run.addPicture(bis, XWPFDocument.PICTURE_TYPE_JPEG, "picture", Units.toEMU(500), Units.toEMU(700)); // 200x200 pixels
+        run.addPicture(bis, XWPFDocument.PICTURE_TYPE_JPEG, "picture", Units.toEMU(600), Units.toEMU(300)); // 200x200 pixels
         baos.close();
         run.addBreak();
 
